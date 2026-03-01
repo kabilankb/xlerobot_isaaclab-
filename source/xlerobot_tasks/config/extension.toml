@@ -1,0 +1,22 @@
+[package]
+
+# Semantic Versioning is used: https://semver.org/
+version = "0.1.0"
+
+# Description
+title = "XLeRobot Tasks"
+description = "Standalone IsaacLab extension for XLeRobot dual-arm mobile manipulator."
+readme = "README.md"
+category = "robotics"
+keywords = ["extension", "xlerobot", "isaaclab"]
+author = "XLeRobot Developers"
+
+[dependencies]
+"isaaclab" = {}
+"isaaclab_tasks" = {}
+
+[core]
+reloadable = false
+
+[[python.module]]
+name = "xlerobot_tasks"
