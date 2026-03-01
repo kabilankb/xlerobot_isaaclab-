@@ -99,7 +99,7 @@ def main():
         print(f"\n[INFO] Available GPUs: {torch.cuda.device_count()}", flush=True)
         for i in range(torch.cuda.device_count()):
             props = torch.cuda.get_device_properties(i)
-            print(f"  GPU {i}: {props.name} ({props.total_mem / 1024**3:.1f} GB)", flush=True)
+            print(f"  GPU {i}: {props.name} ({props.total_memory / 1024**3:.1f} GB)", flush=True)
         print(f"  Using device: {args_cli.device}", flush=True)
     else:
         print("\n[WARN] No CUDA GPUs available. Running on CPU.", flush=True)
